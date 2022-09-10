@@ -1,0 +1,4 @@
+- tight coupling
+  - html - js
+    - tight coupling
+    - if html change, js is broken
