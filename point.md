@@ -1,2 +1,7 @@
 - `ng-src` for avoid rendering error
   - first time Angular variable is undefined so error happens in rendering img
+- create `custom filter`
+  - create filter factory
+  - register filter
+  - get filter via DI filter
+    - name convention is xxxFilter
