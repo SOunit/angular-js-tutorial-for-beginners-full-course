@@ -1,0 +1,2 @@
+- `ng-src` for avoid rendering error
+  - first time Angular variable is undefined so error happens in rendering img
