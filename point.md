@@ -5,3 +5,16 @@
   - register filter
   - get filter via DI filter
     - name convention is xxxFilter
+- digest cycle
+  - angular check changes
+  - setup
+    - $scope.$watch - not recommended
+    - {{someProp}}
+    - <input ng-model="someProp">
+- outside of angular need update angular-context
+  - use `$digest` / `$apply`
+  - in case using setTimeout from jQuery etc.
+    - in case writing code by myself, using Angular functions will help but 3rd party library won't
+  - `$digest` is not good, exception is not visible
+  - `$apply` handle exception and call `$digest` for Angular
+  - `setTimeout` is outside of Angular Context, but `$timeout` is inside AngularJS, better
