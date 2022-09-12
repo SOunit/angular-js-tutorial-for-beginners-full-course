@@ -25,3 +25,22 @@ https://damp-eyrie-18477.herokuapp.com/menu_items.json
   - `$apply` handle exception and call `$digest` for Angular
   - `setTimeout` is outside of Angular Context, but `$timeout` is inside AngularJS, better
 - `this` bind in controller works only with `controller as syntax` pattern
+
+# module
+
+- separate concern
+- `jQuery` is one module, independent
+
+- module
+  - controller
+  - directives
+  - etc.
+
+# event
+
+- design pattern, publish-subscriber pattern
+- `$rootScope` is scope of root
+- `$scope.emit` - to top
+- `$scope.broadcast` - to down
+- `$rootScope.broadcast` - from top to bottom
+- event from anywhere to anywhere
