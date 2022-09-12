@@ -10,8 +10,8 @@
   </head>
   <body>
     <div ng-controller="createUserController as create">
-      <input type="text" ng-model="create.name" />
-      <input type="number" ng-model="create.age" />
+      <input type="text" ng-model="create.name" placeholder="name" />
+      <input type="number" ng-model="create.age" placeholder="age" />
       <button ng-click="create.createUser();">Create</button>
     </div>
     <div ng-controller="showUserController as show">

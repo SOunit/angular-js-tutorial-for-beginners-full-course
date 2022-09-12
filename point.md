@@ -1,3 +1,9 @@
+# backend url
+
+https://damp-eyrie-18477.herokuapp.com/menu_items.json
+
+# memo
+
 - `ng-src` for avoid rendering error
   - first time Angular variable is undefined so error happens in rendering img
 - create `custom filter`
