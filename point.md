@@ -20,7 +20,7 @@ https://damp-eyrie-18477.herokuapp.com/menu_items.json
   - setup
     - $scope.$watch - not recommended
     - {{someProp}}
-    - <input ng-model="someProp">
+    - `<input ng-model="someProp">`
 
 - outside of angular need update angular-context
 
