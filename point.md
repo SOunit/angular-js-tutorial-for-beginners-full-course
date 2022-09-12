@@ -18,3 +18,4 @@
   - `$digest` is not good, exception is not visible
   - `$apply` handle exception and call `$digest` for Angular
   - `setTimeout` is outside of Angular Context, but `$timeout` is inside AngularJS, better
+- `this` bind in controller works only with `controller as syntax` pattern

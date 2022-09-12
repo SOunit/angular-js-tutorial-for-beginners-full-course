@@ -8,5 +8,20 @@
     <script src="./script.js"></script>
     <title>Document</title>
   </head>
-  <body ng-controller="mainController"></body>
+  <body>
+    <div ng-controller="createUserController as create">
+      <input type="text" ng-model="create.name" />
+      <input type="number" ng-model="create.age" />
+      <button ng-click="create.createUser();">Create</button>
+    </div>
+    <div ng-controller="showUserController as show">
+      <ul>
+        <li ng-repeat="user in show.users">
+          <span>{{user.name}}</span>
+          <span>{{user.age}}</span>
+          <button ng-click="show.removeUser($index)">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
